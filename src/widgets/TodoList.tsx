@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Checkbox, Input, List } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
-import { addTodo, deleteTodo, toggleTodo, selectFilteredTodos } from '@/app/store/slices/todosSlice.ts';
+import {addTodo, deleteTodo, selectFilteredTodos, toggleTodo} from "../app/store/slices/todosSlice";
 
 const TodoList = () => {
     const dispatch = useDispatch();

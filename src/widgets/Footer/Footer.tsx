@@ -1,6 +1,5 @@
-import React from 'react';
 import { Button, Space, Typography } from 'antd';
-import {clearCompleted, selectFilter, selectItemsLeft, setFilter} from "../../app/store/slices/todosSlice.ts";
+import {clearCompleted, selectFilter, selectItemsLeft, setFilter} from "../../app/store/slices/todosSlice";
 import {useDispatch, useSelector} from "react-redux";
 
 const { Text } = Typography;

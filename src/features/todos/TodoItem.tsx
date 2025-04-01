@@ -1,8 +1,8 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { Checkbox, List, Button, Typography } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
-import {deleteTodo, toggleTodo} from "@/app/store/slices/todosSlice.ts";
 import {useDispatch} from "react-redux";
+import {deleteTodo, toggleTodo} from "../../app/store/slices/todosSlice";
 
 const { Text } = Typography;
 

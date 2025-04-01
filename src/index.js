@@ -1,0 +1,10 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { persistor, store } from "./app/store/store";
+import TodoList from "./widgets/TodoList";
+import Footer from "./widgets/Footer/Footer";
+import { createRoot } from "react-dom/client";
+const root = createRoot(document.getElementById('root'));
+const App = () => (_jsx(Provider, { store: store, children: _jsx(PersistGate, { loading: null, persistor: persistor, children: _jsxs("div", { style: { padding: 24 }, children: [_jsx(TodoList, {}), _jsx(Footer, {})] }) }) }));
+root.render(_jsx(App, {}));

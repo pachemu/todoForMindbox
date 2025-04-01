@@ -1,9 +1,8 @@
-import React from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import {persistor, store} from "./app/store/store.ts";
-import TodoList from "./widgets/TodoList.tsx";
-import Footer from "./widgets/Footer/Footer.tsx";
+import {persistor, store} from "./app/store/store";
+import TodoList from "./widgets/TodoList";
+import Footer from "./widgets/Footer/Footer";
 import {createRoot} from "react-dom/client";
 const root = createRoot(document.getElementById('root')!);
 
